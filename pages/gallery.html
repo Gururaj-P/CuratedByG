@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | CuratedByG</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E6LQNTV2Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0E6LQNTV2Y');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/branding/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/branding/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/images/branding/favicon.png">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<!-- Lightbox Viewer -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+
+  <span class="lightbox-prev">&#10094;</span>
+  <span class="lightbox-next">&#10095;</span>
+
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
+
+<body>
+
+  <!-- Header / Nav -->
+  <div id="header"></div>
+
+  <main>
+    <section class="gallery-section">
+      <h2 class="section-title">My Work</h2>
+
+      <!-- Filter buttons -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="blender">Blender 3D</button>
+        <button class="filter-btn" data-filter="painting">Paintings & Sketches</button>
+      </div>
+
+      <!-- Masonry gallery grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- JS injects gallery items here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
